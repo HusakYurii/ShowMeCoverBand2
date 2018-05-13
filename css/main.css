@@ -1,0 +1,289 @@
+/*===== F O N T S ======*/
+@import url('https://fonts.googleapis.com/css?family=Cabin|Comfortaa|Sedgwick+Ave|Sedgwick+Ave+Display');
+ /*These fonts are used:
+font-family: 'Sedgwick Ave Display', cursive;
+font-family: 'Comfortaa', cursive;
+font-family: 'Cabin', sans-serif;
+font-family: 'Sedgwick Ave', cursive;*/
+/*========= M A I N =======*/
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Cabin', 'Arial', sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2;
+    letter-spacing: 0.05rem;
+    margin: 0;
+    padding: 0;
+}
+/*========= D E C O R A T I O N =======*/
+.decoration-line-1 {
+    width: 80%;
+    border: 2px solid black;
+    margin: 30px auto;
+}
+
+.decoration-line-2 {
+    width: 100%;
+    border: 2px solid black;
+    margin: 30px auto;
+}
+
+/*======= I M A G E S =======*/
+/*This tag can be redifined*/
+img {
+    width: 75%;
+    height: auto;
+    border-radius: 25%;
+    padding: 15px;
+}
+
+/*======= T Y P O G R A P H Y ======= */
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Sedgwick Ave', cursive;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    padding: 15px 0 15px 0;
+}
+
+h1 {
+    font-size: 8rem;
+    font-family: 'Sedgwick Ave Display', cursive;
+    -webkit-transition: color 0.7s;
+    transition: color 0.7s;
+    color: #fff;
+}
+h1:hover {
+  color: rgba(255, 112, 112, 1);
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2.5rem;
+}
+h5 {
+    font-size: 2rem;
+}
+p {
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+span {
+    font-size: 2.5rem;
+    font-family: 'Sedgwick Ave', cursive;
+}
+label {
+    font-size: 2rem;
+    color: #fff;
+    padding: 15px 0 0 0;
+}
+
+a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-family: 'Sedgwick Ave', cursive;
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.7s, color 0.7s;
+    transition: border-bottom 0.7s, color 0.7s;
+}
+
+a:hover {
+    color: rgba(255, 112, 112, 1);
+    border-bottom: 2px solid #fb6e7c;
+}
+
+/*===== H E A D E R ===== */
+.wrapper {
+  min-width: 490px;
+}
+.header {
+  background: url(../img/head-bg.jpg) center top no-repeat / cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+.sub-header {
+  width: 75%;
+  margin: 0 auto;
+  display: flexbox;
+  display: box;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#toggler > i {
+  display: none;
+  color: #fff;
+  padding: 10px;
+}
+#toggler > i:hover {
+  -webkit-transition: color 0.7s;
+  transition: color 0.7s;
+  color: rgba(255, 112, 112, 1);
+}
+/*===== C O N T E N T ===== */
+.section {
+  background-color: #fb6e7c;
+  padding: 5px 0 5px 0; 
+  /*these padding keep the line decoration from "margin collapsing"*/
+}
+.content {
+  width: 75%;
+  margin: 0 auto;
+}
+/*===== A B O U T U S ===== */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#video {
+  float: right;
+  padding: 10px 15px;
+}
+
+/*===== O U R B A N D  ===== */
+
+  .our-band, .lead, .members, .member {
+      display: flexbox;
+      display: box;
+      display: flex;
+  }
+  .our-band {
+    flex-flow: column;
+    justify-content: center;
+  }
+  .lead {
+    flex-flow: row;
+    align-items: center;
+  }
+  .lead-photo, .lead-description {
+    flex-basis: 50%;
+    text-align: center; /*this keeps content at the center*/
+  }
+  .lead-photo > img {
+    width: 60%;
+  }
+  .lead-description > p {
+    font-size: 2.2rem;
+    padding: 10px;
+  }
+  .members {
+    flex-flow: row;
+  }
+  .member {
+    flex-flow: column;
+    text-align: center;
+    flex-basis: 50%; 
+    /*do not forget that member is an item of members*/
+  }
+  .member-photo > img {
+    width: 50%;
+  }
+  .member-description > p {
+    font-size: 2rem;
+    padding: 10px;
+  }
+
+
+/*===== F O O T E R  ===== */
+.footer {
+  background: url(../img/footer-bg.jpg) no-repeat center top / cover;
+  position: relative;
+}
+#modal-window {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top: 200px;
+  left: 50%;
+  transform: translate(-50% ,0);
+  width: 300px;
+  text-align: center;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: #fb6e7c;
+  padding: 15px 0;
+}
+input[type="button"] {
+  width: 40%;
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 10px 0 10px 0;
+  padding: 5px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  outline: none;
+  background-color: #ccc;
+  -webkit-transition: background-color 0.7s;
+  transition: background-color 0.7s;
+}
+input[type="button"]:hover {
+  background-color: black;
+}
+.footer-shade {
+  background-color: rgba(255, 112, 112, 0.2);
+}
+.contact-us {
+  width: 75%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 10px 0 20px 0;
+  display: flexbox;
+  display: box;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.contact-us > form, .contact-info {
+  flex-basis: 50%;
+  align-self: flex-end;
+  padding: 15px 15px;
+}
+.contact-us > form {
+  display: flexbox;
+  display: box;
+  display: flex;
+  flex-flow: column;
+  color: #fff;
+}
+input[type="text"],
+textarea, input[type="submit"] {
+  background-color: rgba(255, 112, 112, 0.4);
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 5px 0 10px 0;
+  padding: 12px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  outline: none;
+  -webkit-transition: background-color 0.7s;
+  transition: background-color 0.7s;
+}
+input[type="submit"] {
+    width: 40%;
+}
+input[type="text"]:hover,textarea:hover, 
+input[type="submit"]:hover {
+  background-color: rgba(255, 112, 112, 0.2);
+}
+.contact-info {
+  text-align: center;
+  color: #fff;
+}

@@ -1,0 +1,94 @@
+/*CHOOSE AND LEAVE @media screen resolution which are NEEDED */ 
+/*==================================================================*/
+
+/*@media screen and (max-width: 1440px) {  }*/
+@media screen and (max-width: 1290px) {
+
+	.sub-header, .content, .contact-us {
+  		width: 90%;
+  		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 1050px) { 
+	.about-us{
+		text-align: center;
+	}
+	#video {
+  		float: none;
+  		padding: 10px 0 10px 0;
+	}
+	.contact-us{
+		height: 100%;
+		padding-top: 100px;
+		flex-flow: column;
+	}
+	.contact-us > form, .contact-info {
+  		align-self: stretch;
+	}
+}
+
+@media screen and (max-width: 820px) {
+
+#navigation > a {
+	display: block;
+}
+#navigation {
+	display: none;
+	flex-basis: 100%;
+	/* jQuery toggle added*/
+}
+
+#toggler > i {
+  color: #fff;
+  display: inline-block;
+}
+
+.sub-header, .content, .contact-us {
+  	width: 98%;
+  	margin: 0 auto;
+}
+.lead, .members {
+	flex-flow: column;
+}
+.member {
+	flex-flow: row;
+	align-items: center;
+}
+.member-photo {
+	flex-basis: 30%;
+	order: 2;
+}
+  .member-photo > img {
+    width: 100%;
+  }
+.member-description {
+	flex-basis: 70%;
+	order: 1;
+}
+
+}
+@media screen and (max-width: 620px) {
+    
+.member {
+	flex-flow: column;
+	align-items: center;
+}
+.member-photo {
+	order: 1;
+}
+  .member-photo > img {
+    width: 50%;
+  }
+.member-description {
+	order: 2;
+}
+
+}
+
+@media screen and (max-width: 495px) { 
+	.header, .footer {
+		background: none;
+		background-color: black;
+	}
+}
