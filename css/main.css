@@ -113,11 +113,9 @@ a:hover {
   min-width: 490px;
 }
 .header {
-  -moz-background: url(../img/head-bg.jpg) center top no-repeat / cover;
- -webkit-background: url(../img/head-bg.jpg) center top no-repeat / cover;
-  background: url(../img/head-bg.jpg) center top no-repeat / cover;
-  background-attachment: fixed;
   height: 100vh;
+  background: url(../img/head-bg.jpg) no-repeat center top / cover;
+  background-attachment: fixed;
 }
 .sub-header {
   width: 75%;
