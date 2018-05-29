@@ -243,7 +243,6 @@ input[type="button"]:hover {
 }
 .contact-us {
   width: 75%;
-  height: 100vh;
   margin: 0 auto;
   padding: 10px 0 20px 0;
   display: flexbox;
