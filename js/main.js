@@ -26,7 +26,7 @@ jQuery(document).ready(function($){
             url: "feedback.php",
             data: $(this).serialize()
         }).done(function(){
-            $('#modal-window').fadeIn(500);
+            $('#modal-window').fadeIn(500); //this piece of code can be changed
         });
         return false;
     });
